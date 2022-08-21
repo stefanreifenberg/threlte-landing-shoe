@@ -58,6 +58,11 @@
     line-height: 0.74em;
     color: #f7f4af;
   }
+  @media (max-width: 425px) {
+    .content {
+      grid-template-columns: 1fr;
+    }
+  }
 
   .left-div {
     position: relative;
@@ -70,6 +75,14 @@
     font-family: 'ThunderThin';
     line-height: 1em;
   }
+
+  /* add meria query to left-div*/
+  @media (max-width: 768px) {
+    .left-div {
+      padding: 50px;
+    }
+  }
+
   .sub {
     align-self: end;
     width: 200px;
@@ -100,5 +113,5 @@
 	  height: 100%;
     z-index: 1;
   }
-  
+
 </style>
