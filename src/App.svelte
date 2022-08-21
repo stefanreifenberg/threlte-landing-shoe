@@ -1,12 +1,14 @@
 <script>
   import { ContactShadows } from '@threlte/extras'
   import Model from './lib/Model.svelte'
+  import Kate from './lib/Kate.svelte'
   import {
     Canvas,
 		AmbientLight,
 		PerspectiveCamera,
     SpotLight
 	} from '@threlte/core'
+
 </script>
 
 <div class="canvas-wrapper">
@@ -14,10 +16,10 @@
     <AmbientLight color={0xffffff} intensity={2} />
     <SpotLight position={{x:1, y:6, z:1.5}} angle={0.2} penumbra={1} intensity={2.5} shadow shadow-mapSize={[2048, 2048]} />
       <SpotLight position={{x:-5, y:5, z:-1.5}} angle={0.03} penumbra={1} intensity={4} shadow shadow-mapSize={[1024, 1024]} />
-      <SpotLight position={{x:5, y:5, z:-5}} angle={0.3} penumbra={1} intensity={4} shadow shadow-mapSize={[256, 256]} color="#ffffc0" />
+      <SpotLight position={{x:5, y:5, z:-5}} angle={0.3} penumbra={1} intensity={4} shadow shadow-mapSize={[256, 256]} color="#FF3820" />
     <PerspectiveCamera fov={50} position={{ x: 0, y:0, z: 1.1 }}>
     </PerspectiveCamera>
-    <Model />
+    <Kate />
     <ContactShadows frames={1} rotation={{x:Math.PI / 2}} position={{x:0,y:0.33,z:0}} far={0.4} width={2} height={2} blur={4} />
  
   </Canvas>
@@ -25,20 +27,27 @@
 
 <div class="content">
   <div class="left-div">
-    THE SISTRUM
+    THE SO KATE
     <br />
-    IS DESIGNED
+    IS ONE OF THE
     <br />
-    TO REPRESENT
+    MOST ICONIC 
     <br />
-    CONTINUAL
+    SHOES OF ALL 
     <br />
-    AGITATION.
+    CHRISTIAN LOUBOUTIN 
+    <br />
+    DESIGNS.
     <div class="sub"></div>
   </div>
   <div class="right-div">
     <div class="jumbo">
-      M1
+      SO 
+      <br />
+      <br />
+      <br />
+      <br />
+      KATE
     </div>
   </div>
 </div>
@@ -56,7 +65,7 @@
     font-family: 'ThunderBlack';
     font-size: 4em;
     line-height: 0.74em;
-    color: #f7f4af;
+    color: #FF3820;
   }
   @media (max-width: 425px) {
     .content {
@@ -87,7 +96,7 @@
     align-self: end;
     width: 200px;
     height: 2px;
-    background: #f7f4af;
+    background: #FF3820;
   }
 
   .right-div {
@@ -95,7 +104,7 @@
     display: flex;
     width: 100%;
     height: 100%;
-    background: #f7f4af;
+    background: #FF3820;
     color: #252525;
   }
   .jumbo {
